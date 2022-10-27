@@ -43,6 +43,7 @@ public class Humain {
 	public void acheter(String bien, int prix) {
 		if(prix < this.argent) {
 			parler("J'ai " + this.argent + " sous en poche. Je vais pouvoir m'offrir " + bien + " à " + prix + " sous");
+			perdreArgent(prix);
 		}
 		else {
 			parler("Je n'ai plus que  " + this.argent + " sous en poche. Je ne peux pas m'offrir " + bien + " à " + prix + " sous");
