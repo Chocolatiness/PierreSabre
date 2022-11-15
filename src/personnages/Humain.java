@@ -66,7 +66,9 @@ public class Humain {
 	
 	public void faireConnaissanceAvec(Humain humain) {
 		direBonjour();
+		System.out.println("test...");
 		humain.repondre(this);
+		System.out.println("test : ok");
 		memoriser(humain);
 	}
 	
