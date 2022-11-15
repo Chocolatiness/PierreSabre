@@ -18,12 +18,12 @@ public class Ronin extends Humain {
 		if (this.honneur*2 > adversaire.getReputation()) {
 			parler("Je t'ai eu petit yakusa!");
 			int butin = adversaire.perdre();
-			this.honneur += 1;
+			this.honneur ++;
 			gagnerArgent(butin);
 		}
 		else {
 			parler("J'ai perdu contre ce yakuza, mon honneur et ma bourse ont en pris un coup.");
-			this.honneur -= 1;
+			this.honneur --;
 			int butin = this.getArgent();
 			this.perdreArgent(butin);
 			adversaire.gagner(butin);

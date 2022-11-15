@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author snoop
- *
- */
-module PierreSabre {
-}

@@ -4,7 +4,7 @@ public class Humain {
 	private String nom;
 	private String boissonfav;
 	private int argent;
-	private int maxConnaissance = 3;
+	private int maxConnaissance = 30;
 	private int nbConnaissance = 0;
 	protected Humain[] connaissance = new Humain[maxConnaissance];
 	
@@ -55,7 +55,8 @@ public class Humain {
 		if (nbConnaissance < maxConnaissance) {
 			connaissance[nbConnaissance] = humain;
 			nbConnaissance++;
-		} else {
+		} 
+		else {
 			for (int i = 1; i < maxConnaissance; i++) {
 				connaissance[i-1] = connaissance[i];
 			}
