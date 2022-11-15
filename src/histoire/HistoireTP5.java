@@ -14,8 +14,8 @@ public class HistoireTP5 {
 	marco.faireConnaissanceAvec(chonin);
 	marco.faireConnaissanceAvec(kumi);
 	marco.listerConnaissance();
-	roro.listerConnaissance();
-	yaku.listerConnaissance();
+	//roro.listerConnaissance();
+	//yaku.listerConnaissance();
 	Samourai akimoto = new Samourai("Miyamoto","Akimoto", "saké", 80);
 	akimoto.faireConnaissanceAvec(marco);
 	akimoto.listerConnaissance();
